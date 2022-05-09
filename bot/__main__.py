@@ -45,18 +45,20 @@ def stats(update, context):
 
 def start(update, context):
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/SlamDevs/slam-mirrorbot")
-    buttons.buildbutton("Channel", "https://t.me/SlamMirrorUpdates")
+    buttons.buildbutton("ҒᏆᏞͲᎬᎡ ᏴϴͲ", "https://t.me/rb_luna_bot")
+    buttons.buildbutton("ᎷϴᏙᏆᎬ ᏀᎡϴႮᏢ", "https://t.me/Tamil_moviesdaa")
+    buttons.buildbutton("ᎷᏆᎡᎡϴᎡ ᏀᎡϴႮᏢ", "https://t.me/lunamirror")
+    buttons.buildbutton("ᎠᎬᏙᎬᏞϴᏢᎬᎡ", "https://t.me/balaSmurugan")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
-This bot can mirror all your links to Google Drive!
-Type /{BotCommands.HelpCommand} to get a list of available commands
+𝚃𝙷𝙸𝚂 𝙱𝙾𝚃 𝙲𝙰𝙽 𝙼𝙸𝚁𝚁𝙾𝚁 𝙰𝙻𝙻 𝚈𝙾𝚄𝚁 𝙻𝙸𝙽𝙺𝚂 𝚃𝙾 𝙶𝙾𝙾𝙶𝙻𝙴 𝙳𝚁𝙸𝚅𝙴!
+𝚃𝚈𝙿𝙴 /{BotCommands.HelpCommand} 𝚃𝙾 𝙶𝙴𝚃 𝙰 𝙻𝙸𝚂𝚃 𝙾𝙵 𝙰𝚅𝙰𝙸𝙻𝙰𝙱𝙻𝙴 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
         sendMarkup(
-            'Oops! not a Authorized user.\nPlease deploy your own <b>slam-mirrorbot</b>.',
+            '𝙾𝙾𝙿𝚂! 𝚈𝙾𝚄𝙴 𝙽𝙾𝚃 𝙰 𝙰𝚈𝚃𝙷𝙾𝚁𝙸𝚉𝙴𝙳 𝚄𝚂𝙴𝚁.\n𝙿𝙻𝙴𝙰𝚂𝙴 𝙳𝙴𝙿𝙻𝙾𝚈 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 <b>𝙼𝙸𝚁𝚁𝙾𝚁-𝙻𝙴𝙴𝙲𝙷-𝙱𝙾𝚃</b>.',
             context.bot,
             update,
             reply_markup,
