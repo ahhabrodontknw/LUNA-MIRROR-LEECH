@@ -158,7 +158,7 @@ help_string_telegraph = f'''<br>
 help = Telegraph(access_token=telegraph_token).create_page(
         title='Mirrorbot Help',
         author_name='Mirrorbot',
-        author_url='https://github.com/SlamDevs/slam-mirrorbot',
+        author_url='https://github.com/BalamuruganDV/LUNA-MIRROR-LEECH',
         html_content=help_string_telegraph,
     )["path"]
 
@@ -231,11 +231,11 @@ def main():
     if os.path.isfile(".restartmsg"):
         with open(".restartmsg") as f:
             chat_id, msg_id = map(int, f)
-        bot.edit_message_text("Restarted successfully!", chat_id, msg_id)
+        bot.edit_message_text("𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳 𝚂𝚄𝙲𝙲𝙴𝚂𝚂𝙵𝚄𝙻𝙻𝚈!", chat_id, msg_id)
         os.remove(".restartmsg")
     elif OWNER_ID:
         try:
-            text = "<b>Bot Restarted!</b>"
+            text = "<b>𝙱𝙾𝚃 𝚁𝙴𝚂𝚃𝙰𝚁𝚃𝙴𝙳!</b>"
             bot.sendMessage(chat_id=OWNER_ID, text=text, parse_mode=ParseMode.HTML)
             if AUTHORIZED_CHATS:
                 for i in AUTHORIZED_CHATS:
@@ -260,7 +260,7 @@ def main():
     dispatcher.add_handler(stats_handler)
     dispatcher.add_handler(log_handler)
     updater.start_polling(drop_pending_updates=IGNORE_PENDING_REQUESTS)
-    LOGGER.info("Bot Started!")
+    LOGGER.info("𝙱𝙾𝚃 𝚂𝚃𝙰𝚁𝚃𝙴𝙳!")
     signal.signal(signal.SIGINT, fs_utils.exit_clean_up)
 
 app.start()
