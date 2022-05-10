@@ -260,7 +260,7 @@ def main():
     dispatcher.add_handler(stats_handler)
     dispatcher.add_handler(log_handler)
     updater.start_polling(drop_pending_updates=IGNORE_PENDING_REQUESTS)
-    LOGGER.info("𝙱𝙾𝚃 𝚂𝚃𝙰𝚁𝚃𝙴𝙳!")
+    LOGGER.info("ᎡᏴ[𝙼𝙸𝚁𝚁𝙾𝚁]×͜× 𝚂𝚃𝙰𝚁𝚃𝙴𝙳!")
     signal.signal(signal.SIGINT, fs_utils.exit_clean_up)
 
 app.start()
