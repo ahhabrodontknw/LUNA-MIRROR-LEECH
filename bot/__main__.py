@@ -157,7 +157,7 @@ help_string_telegraph = f'''<br>
 '''
 help = Telegraph(access_token=telegraph_token).create_page(
         title='Mirrorbot Help',
-        author_name='Mirrorbot',
+        author_name='balamurugan',
         author_url='https://github.com/BalamuruganDV/LUNA-MIRROR-LEECH',
         html_content=help_string_telegraph,
     )["path"]
@@ -190,7 +190,7 @@ help_string = f'''
 
 def bot_help(update, context):
     button = button_build.ButtonMaker()
-    button.buildbutton("Other Commands", f"https://telegra.ph/{help}")
+    button.buildbutton("𝙾𝚃𝙷𝙴𝚁 𝙲𝙾𝙼𝙼𝙰𝙽𝙳𝚂", f"https://telegra.ph/{help}")
     reply_markup = InlineKeyboardMarkup(button.build_menu(1))
     sendMarkup(help_string, context.bot, update, reply_markup)
 
